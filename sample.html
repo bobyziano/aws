@@ -11,9 +11,9 @@
     <div id="fb-root"></div>
     <script type="text/javascript">
         var appId = 'YOUR_APP_ID';
-        var roleArn = 'YOUR_ROLE_ARN';
-        var bucketName = 'YOUR_BUCKET_NAME';
-        AWS.config.region = 'YOUR_BUCKET_REGION';
+        var roleArn = 'arn:aws:s3:::bobyziano-01';
+        var bucketName = 'bobyziano-01';
+        AWS.config.region = 'us-east-1';
 
         var fbUserId;
         var bucket = new AWS.S3({
