@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+Cognito - Auth
+===
 
-You can use the [editor on GitHub](https://github.com/bobyziano/aws/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+by *Guzmán Monné*.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This repo contains all the code for the article "[Custom authentication using AWS Cognito](https://medium.com/@gmonne/custom-authentication-using-aws-cognito-e0b489badc3f)", hosted on [Medium](https://www.medium.com).
 
-### Markdown
+Before running this code you should create a JavaScript file inside the `javascript` folder called `config.js`. Here you should set your "User Pool" id and app client id on the window object using the names: `USER_POOL_ID`, and `CLIENT_ID`.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Here are some useful links used while creating the article:
 
-```markdown
-Syntax highlighted code block
+- [JavaScript Micro-Templating](https://johnresig.com/blog/javascript-micro-templating/)
 
-# Header 1
-## Header 2
-### Header 3
+Image reference:
+---
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bobyziano/aws/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Cognito_Overview_4a, [https://aws.amazon.com/es/cognito/](https://aws.amazon.com/es/cognito/).
