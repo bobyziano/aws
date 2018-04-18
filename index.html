@@ -2,24 +2,15 @@
 <html>
 <body>
 
-<p>Enter names in the fields, then click "Submit" to submit the form:</p>
+<p id="demo">Click the button to change the text in this paragraph.</p>
 
-<form id="frm1" action="/action_page.php">
-  Username: <input type="text" name="fname"><br>
-  Password: <input type="text" name="lname"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
-</form>
+<button onclick="myFunction()">Try it</button>
 
 <script>
 function myFunction() {
-    document.getElementById("frm1").submit();
-    document.getElementById("user").submit();
+    document.getElementById("demo").innerHTML = "Hello World";
 }
 </script>
-
-
-
-
 
 </body>
 </html>
