@@ -20,7 +20,8 @@ function myFunction() {
     }
     //pedido.send(null);
     document.getElementById("demo").innerHTML = pedido.responseText;
-    
+    console.log('response head: ' + pedido.responseText.substring(0, 15) + '...');
+
 }
 </script>
 
