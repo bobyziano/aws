@@ -12,13 +12,13 @@ function myFunction() {
     var metodo = 'GET';
     var state = true;
     
-    var request = new XMLHttpRequest();
-    if (request.readyState == HMLHttpRequest.DONE)
+    var pedido = new XMLHttpRequest();
+    if (pedido.readyState == HMLHttpRequest.DONE)
     {
-        alert(request.resposeText);
+        alert(pedido.resposeText);
     }
-    request.open (metodo, url, true);
-    request.send(null);
+    pedido.open (metodo, url, true);
+    pedido.send(null);
     //document.getElementById("demo").innerHTML = request.responseText;
     
 }
