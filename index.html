@@ -12,8 +12,9 @@ function myFunction() {
     var metodo = 'GET';
     var state = true;
     
-    var request = new XMLHttp   
-    document.getElementById("demo").innerHTML = "Hello World";
+    var request = new XMLHttp;
+    request.open (metodo, url, true);
+    document.getElementById("demo").innerHTML = request;
     
 }
 </script>
