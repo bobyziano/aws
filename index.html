@@ -7,23 +7,24 @@
 <button onclick="myFunction()">Try it</button>
 
 <script>
-function myFunction() {
+    function myFunction() 
+    {
     var url = 'https://ndp5zt77kf.execute-api.us-east-1.amazonaws.com/dev/entries';
     var metodo = 'GET';
     var state = true;
-    
     var pedido = new XMLHttpRequest();
+    console.log('response before open: ' + pedido.readyState);
     pedido.open (metodo, url, true);
     console.log('response after open: ' + pedido.readyState);
     if (pedido.readyState == XMLHttpRequest.DONE)
-    {
-        alert(pedido.resposeText);
-    }
+        {
+            alert(pedido.resposeText);
+        }
     //pedido.send(null);
     document.getElementById("demo").innerHTML = pedido.responseText;
     console.log('response head: ' + pedido.readyState);
-
-}
+    console.log(pedido.HEADERS_RECEIVED);
+    }
 </script>
 
 </body>
