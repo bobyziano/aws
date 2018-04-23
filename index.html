@@ -12,10 +12,14 @@ function myFunction() {
     var metodo = 'GET';
     var state = true;
     
-    var request = new XMLHttpRequest;
+    var request = new XMLHttpRequest();
+    if (request.readyState == HMLHttpRequest.DONE)
+    {
+        alert(request.resposeText);
+    }
     request.open (metodo, url, true);
-    request.load();
-    document.getElementById("demo").innerHTML = request.responseText;
+    request.send(null);
+    //document.getElementById("demo").innerHTML = request.responseText;
     
 }
 </script>
