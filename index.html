@@ -13,11 +13,11 @@ function myFunction() {
     var state = true;
     
     var pedido = new XMLHttpRequest();
+    pedido.open (metodo, url, true);
     if (pedido.readyState == HMLHttpRequest.DONE)
     {
         alert(pedido.resposeText);
     }
-    pedido.open (metodo, url, true);
     pedido.send(null);
     //document.getElementById("demo").innerHTML = request.responseText;
     
