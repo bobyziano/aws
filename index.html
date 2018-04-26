@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<p id="demo">Click the button to change the text in this paragraph.</p>
+// <p id="demo">Click the button to change the text in this paragraph.</p>
 
 <button onclick="myFunction()">Try it</button>
 
@@ -17,7 +17,7 @@
       <label class="Control__label" for="password">Password</label>
       <input class="Control__input" name="password" type="password" placeholder="Password" />
     </div>
-    //<input class="Control__input" (button_active) type="submit" value="Let's go" onclick="location.href='https://aw5t4p5ubb.execute-api.us-east-1.amazonaws.com/dev/connection'/>
+// <input class="Control__input" (button_active) type="submit" value="Let's go" onclick="location.href='https://aw5t4p5ubb.execute-api.us-east-1.amazonaws.com/dev/connection'/>
     <input value="here we go!" type="button" class="Control__input" onclick="location.href='https://aw5t4p5ubb.execute-api.us-east-1.amazonaws.com/dev/connection';" />
   </form>
 </div>
@@ -26,9 +26,9 @@
 <script>
     function myFunction() 
     {
-    //var url = 'https://ndp5zt77kf.execute-api.us-east-1.amazonaws.com/dev/entries';
-    //var metodo = 'GET';
-    //var state = true;
+    // var url = 'https://ndp5zt77kf.execute-api.us-east-1.amazonaws.com/dev/entries';
+    // var metodo = 'GET';
+    // var state = true;
     var pedido = new XMLHttpRequest();
     console.log('response before open: ' + pedido.readyState);
     pedido.open ("GET", "https://aw5t4p5ubb.execute-api.us-east-1.amazonaws.com/dev/connection", true);
@@ -39,7 +39,7 @@
         {
             alert(pedido.resposeText);
         }
-    //pedido.send(null);
+    // pedido.send(null);
     document.getElementById("demo").innerHTML = pedido.responseText;
     console.log('response head: ' + pedido.readyState);
     console.log(pedido.HEADERS_RECEIVED);
