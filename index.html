@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<!-- <p id="demo">Click the button to change the text in this paragraph.</p> -->
+<p id="demo">Click the button to change the text in this paragraph.</p>
 
 <button onclick="myFunction()">Try it</button>
 
-<div class="LoginForm" action="https://aw5t4p5ubb.execute-api.us-east-1.amazonaws.com/dev/connection">
+<div class="LoginForm">
   <div class="LoginForm__title">Login</div>
-  <form class="LoginForm__form">
+  <form class="LoginForm__form" action="https://aw5t4p5ubb.execute-api.us-east-1.amazonaws.com/dev/connection" method="get">
     <div class="Control">
       <label class="Control__label" for="user">User</label>
       <input class="Control__input" name="user" type="text" placeholder="User" />
